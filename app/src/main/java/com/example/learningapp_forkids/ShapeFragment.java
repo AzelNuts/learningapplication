@@ -67,7 +67,7 @@ public class ShapeFragment extends Fragment {
 
         String shape[] = {"Square","Circle","Triangle","Rectangle","Star","Heart"};
         ListView lv = v.findViewById(R.id.listview1);
-        ArrayAdapter<String>adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, shape );
+        ArrayAdapter<String>adapter = new ArrayAdapter<String>(getContext(), R.layout.mytextviewshapes, shape );
         lv.setAdapter(adapter);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -122,8 +122,9 @@ public class AnimalFragment extends Fragment {
         public View getView(int position, View convertView, ViewGroup parent) {
 
             ImageView iv = new ImageView(context);
+            iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
             iv.setImageResource(animal[position]);
-            iv.setLayoutParams(new ViewGroup.LayoutParams(200,200));
+            iv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 200));
 
             return iv;
         }

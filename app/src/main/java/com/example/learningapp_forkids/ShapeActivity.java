@@ -13,7 +13,7 @@ public class ShapeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shape);
-
+        getSupportActionBar().hide();
         String name = getIntent().getStringExtra("name").toLowerCase();
         Toast.makeText(this,name, Toast.LENGTH_SHORT).show();
 

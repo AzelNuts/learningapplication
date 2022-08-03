@@ -1,8 +1,10 @@
 package com.example.learningapp_forkids;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -53,6 +55,7 @@ public class AlphabetFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -66,13 +69,15 @@ public class AlphabetFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_alphabet, container, false);
 
         String alpha[] = new String[26];
+
+
         for(int i=0,j=65; i<26;i++,j++){
 
             alpha[i] = Character.toString((char)j);
         }
 
         GridView gv = v.findViewById(R.id.gridview1);
-        ArrayAdapter<String>adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1,alpha);
+        ArrayAdapter<String>adapter = new ArrayAdapter<String>(getContext(), R.layout.mytextview,alpha);
         gv.setAdapter(adapter);
 
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

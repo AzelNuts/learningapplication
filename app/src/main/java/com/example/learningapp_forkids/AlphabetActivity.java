@@ -13,6 +13,7 @@ public class AlphabetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alphabet);
+        getSupportActionBar().hide();
 
         String name =  getIntent().getStringExtra("name").toLowerCase();
         ImageView iv = findViewById(R.id.imageView);
