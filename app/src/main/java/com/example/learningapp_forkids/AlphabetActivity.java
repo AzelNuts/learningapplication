@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -24,5 +25,10 @@ public class AlphabetActivity extends AppCompatActivity {
         int mid = getResources().getIdentifier(name, "raw",getPackageName());
         MediaPlayer mp =  MediaPlayer.create(getApplicationContext(),mid);
         mp.start();
+    }
+
+    public void buttongoback(View view) {
+        setContentView(R.layout.activity_main);
+
     }
 }
