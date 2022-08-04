@@ -7,15 +7,16 @@
     android:background="@drawable/bgn">
 
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/imageView4"
-        android:layout_width="152dp"
-        android:layout_height="181dp"
-        android:layout_marginTop="232dp"
+    <ImageView
+        android:id="@+id/bearAnim"
+        android:layout_width="330dp"
+        android:layout_height="208dp"
+        app:layout_constraintBottom_toTopOf="@+id/get_started"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759"
         app:srcCompat="@drawable/bear" />
 
     <Button

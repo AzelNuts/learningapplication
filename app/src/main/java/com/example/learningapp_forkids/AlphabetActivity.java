@@ -2,9 +2,11 @@ package com.example.learningapp_forkids;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -25,10 +27,17 @@ public class AlphabetActivity extends AppCompatActivity {
         int mid = getResources().getIdentifier(name, "raw",getPackageName());
         MediaPlayer mp =  MediaPlayer.create(getApplicationContext(),mid);
         mp.start();
+
+        Button backToMain = findViewById(R.id.buttonback);
+
+        backToMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i1 = new Intent(getBaseContext(),MainActivity.class);
+                startActivity(i1);
+            }
+        });
     }
 
-    public void buttongoback(View view) {
-        setContentView(R.layout.activity_main);
 
-    }
 }
