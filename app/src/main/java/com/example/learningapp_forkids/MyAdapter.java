@@ -18,15 +18,16 @@ class MyAdapter extends FragmentStateAdapter {
         switch (position){
             case 0 : return new AlphabetFragment();
             case 1 : return new ShapeFragment();
-            case 3 : return new AnimalFragment();
-            case 4 : return new ColorFragment();
+            case 2 : return new AnimalFragment();
+            case 3 : return new ColorFragment();
+            case 4 : return new videosFragment();
 
         }
-        return new ColorFragment();
+        return new videosFragment();
     }
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 5;
     }
 }

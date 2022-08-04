@@ -2,4 +2,24 @@
     <string name="app_name">LearningApp_forkids</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="links">
+        <item name="Animals For KIDS">https://youtu.be/1e10bjOzpDc</item>
+        <item name="Old MacDonald">https://youtu.be/EkHqBoBT9Yo</item>
+        <item name="Jello Color">https://youtu.be/JHHYXN52oUo</item>
+        <item name="Los Pollitos Dicen Dance">https://youtu.be/3e_KEVMUvuo</item>
+        <item name="Baa Baa Black Sheep">https://youtu.be/1FnmVwQT1VU</item>
+        <item name="Twinkle Twinkle Little Star">https://youtu.be/hqzvHfy-Ij0</item>
+        <item name="This Little Piggy ">https://youtu.be/3BaVPVeTWss</item>
+    </string-array>
+
+    <string-array name="linksName">
+        <item name="Animals For KIDS">Animals For KIDS</item>
+        <item name="Old MacDonald">Old MacDonald</item>
+        <item name="Jello Color">Jello Color</item>
+        <item name="Los Pollitos Dicen Dance">Los Pollitos Dicen Dance</item>
+        <item name="Baa Baa Black Sheep">Baa Baa Black Sheep</item>
+        <item name="Twinkle Twinkle Little Star">Twinkle Twinkle Little Star</item>
+        <item name="This Little Piggy ">This Little Piggy </item>
+    </string-array>
 </resources>

@@ -10,7 +10,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
-    String tabTitle[] = {"ABCD","Shape","Colors","Animal"};
+    String tabTitle[] = {"ABCD","Shape","Animal","Colors", "CocoMelon"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tl = findViewById(R.id.tabLayout);
         ViewPager2 pager = findViewById(R.id.viewPager2);
-        pager.setOffscreenPageLimit(5);
+        pager.setOffscreenPageLimit(6);
 
         pager.setAdapter(new MyAdapter(getSupportFragmentManager(),getLifecycle()));
 
