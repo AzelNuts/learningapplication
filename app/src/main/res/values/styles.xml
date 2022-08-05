@@ -6,6 +6,7 @@
             parent="TextAppearance.Design.Tab">
         <item name="android:textSize">20dp</item>
         <item name="android:fontFamily">@font/bubble</item>
+        <item name="android:color">@color/black</item>
         <item name="android:maxLines">1</item>
     </style>
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +10,21 @@
     <GridView
         android:id="@+id/gridview1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="527dp"
         android:background="#2DFFC30A"
-        android:numColumns="4" />
+        android:numColumns="4">
+
+    </GridView>
+
+    <Button
+        android:id="@+id/buttonbacktoASL2"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/bubble"
+        android:text="Main Menu"
+        android:textSize="24sp"
+        app:cornerRadius="30dp" />
+
 </FrameLayout>

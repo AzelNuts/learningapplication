@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class videosActivity extends AppCompatActivity {
 
@@ -28,7 +27,7 @@ public class videosActivity extends AppCompatActivity {
         MediaPlayer mp =  MediaPlayer.create(getApplicationContext(),mid);
         mp.start();
 
-        Button backToMain = findViewById(R.id.buttonback);
+        Button backToMain = findViewById(R.id.buttonbacktoASL);
 
         backToMain.setOnClickListener(new View.OnClickListener() {
             @Override

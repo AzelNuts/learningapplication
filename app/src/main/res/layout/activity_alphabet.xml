@@ -17,15 +17,30 @@
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <Button
-        android:id="@+id/buttonback"
-        android:layout_width="200dp"
+        android:id="@+id/buttonbacktoASL"
+        android:layout_width="150dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/bubble"
+        android:text="Main Menu"
+        android:textSize="24sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/bubble"
         android:text="Back"
         android:textSize="24sp"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

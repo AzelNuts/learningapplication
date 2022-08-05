@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgblur"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
-
 
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="0dp"
-        android:background="#5F4B8BFF"
         android:layout_height="wrap_content"
-        app:tabTextAppearance="@style/MyCustomTabText"
+        android:background="#5F4B8BFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="#CD6FDD"
+        app:tabSelectedTextColor="#CD6FDD"
+        app:tabTextAppearance="@style/MyCustomTabText"
+        app:tabTextColor="#FFFFFF"
+        tools:tabIndicatorColor="#FFFFFF">
 
 
     </com.google.android.material.tabs.TabLayout>

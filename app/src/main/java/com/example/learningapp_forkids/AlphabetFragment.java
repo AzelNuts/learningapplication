@@ -1,18 +1,16 @@
 package com.example.learningapp_forkids;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-
-import androidx.core.content.res.ResourcesCompat;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.GridView;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,6 +77,16 @@ public class AlphabetFragment extends Fragment {
         GridView gv = v.findViewById(R.id.gridview1);
         ArrayAdapter<String>adapter = new ArrayAdapter<String>(getContext(), R.layout.mytextview,alpha);
         gv.setAdapter(adapter);
+
+        Button backToStarted = v.findViewById(R.id.buttonbacktoASL2);
+
+        backToStarted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i1 = new Intent(getContext(),splashScreen.class);
+                startActivity(i1);
+            }
+        });
 
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
